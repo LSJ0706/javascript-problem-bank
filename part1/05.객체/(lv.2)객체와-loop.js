@@ -9,6 +9,11 @@
  * @returns {number}
  */
 function countProperties(obj) {
+  let cnt = 0;
+  for (let key in obj) {
+    cnt++;
+  }
+  return cnt;
   // TODO
 }
 
