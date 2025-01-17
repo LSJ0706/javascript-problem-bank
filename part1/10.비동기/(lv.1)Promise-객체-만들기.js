@@ -9,7 +9,13 @@
  */
 
 let resolvePromise;
+resolvePromise = new Promise((resolve) => {
+  return resolve("Hello");
+});
 let rejectPromise;
+rejectPromise = new Promise((resolve, reject) => {
+  return reject("Error!");
+});
 
 // export를 수정하지 마세요.
 export { resolvePromise, rejectPromise };

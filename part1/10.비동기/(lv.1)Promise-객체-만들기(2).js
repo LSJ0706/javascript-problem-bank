@@ -5,7 +5,12 @@
  *
  * @returns {Promise<string>}
  */
-function returnHello() {}
+function returnHello() {
+  const promise = new Promise((resolve) => {
+    return resolve("Hello");
+  });
+  return promise;
+}
 
 // export를 수정하지 마세요.
 export { returnHello };

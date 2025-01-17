@@ -9,6 +9,10 @@
  */
 
 function delay(ms) {
+  const promise = new Promise((resolve) => {
+    setTimeout(resolve("done"), ms);
+  });
+  return promise;
   // TODO: delay 함수를 작성하세요.
 }
 
