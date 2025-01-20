@@ -16,7 +16,15 @@
  * @returns {object}
  */
 
-function mergeObjects(...objs) {}
+function mergeObjects(...objs) {
+  const answer = {};
+  objs.forEach((v) => {
+    for (let key in v) {
+      answer[key] = v[key];
+    }
+  });
+  return answer;
+}
 
 // export를 수정하지 마세요.
 export { mergeObjects };
